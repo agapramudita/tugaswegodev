@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Web Profile</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <style>
+
+  body{
+    background-color:white;
+  }
+
+  h1{
+    color: white;
+    text-align: center;
+  }
+
+html,
+body,
+header,
+.view {
+  height: 100%;
+}
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 500px;
+  }
+}
+@media (min-width: 800px) and (max-width: 850px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 500px;
+  }
+}
+
+.top-nav-collapse {
+  background-color: black;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent;
+}
+
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+    background: transparent;
+  }
+}
+
+.rgba-gradient {
+  background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%);
+  background: linear-gradient(to 45deg, rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%);
+  height:15cm;
+}
+
+.card {
+  background-color: rgb(255, 253, 253);
+}
+
+.md-form label {
+  color: #ffffff;
+}
+
+h6 {
+  line-height: 1.7;
+}
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  padding-top: 0%;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.foto{
+  width: 50cm;
+  height: 15cm;
+  padding: 0%;
+  margin: 0%;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+#logo_container {
+    display:table;
+    height:330px;
+    width:250px;
+    margin:0 auto;   
+    text-align:center;
+}
+
+#logo {
+    display:table-cell;
+    vertical-align:middle;
+
+}
+#logo img {
+    max-height:100%;
+    max-width:100%;
+}
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.bodyabout{
+  background-color: black;
+}
+#contact {
+  padding: 60px 0;
+}
+
+#contact .contact-info {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#contact .contact-info i {
+  font-size: 48px;
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #18d26e;
+}
+
+#contact .contact-info address, #contact .contact-info p {
+  margin-bottom: 0;
+  color: #000;
+}
+
+#contact .contact-info h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #999;
+}
+
+#contact .contact-info a {
+  color: #000;
+}
+
+#contact .contact-info a:hover {
+  color: #18d26e;
+}
+
+#contact .contact-address, #contact .contact-phone, #contact .contact-email {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  #contact .contact-address, #contact .contact-phone, #contact .contact-email {
+    padding: 20px 0;
+  }
+}
+
+@media (min-width: 768px) {
+  #contact .contact-phone {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+  }
+}
+
+
+   </style>
+  </head>
+  <body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#"><strong>FIRODEV</strong></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#Home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#About us">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact us</a>
+          </li>    
+        </ul>
+      </div>  
+    </nav>
+      <!-- Navbar -->
+      <div data-spy="scroll" data-target="#navbar-example2" data-offset="0"></div>
+  <!-- Full Page Intro -->
+  <section id="Home">
+  <div class="view" style="background-image: url('https://www.theladders.com/wp-content/uploads/teamwork_190415.jpg'); background-repeat: no-repeat; background-size: small cover; background-position: center center; height: 15cm;">
+    <!-- Mask & flexbox options-->
+    <div class="mask rgba-gradient align-items-center text-xl-center">
+      <!-- Content -->
+      <div class="container">
+        <div class="row mt-8">
+          <!--Grid column-->
+          <div class="col-lg-12 mb-1 mt-lg-5 mt-5 white-text text-center text-lg-left">
+            <div id='logo_container'>
+              <h1 id='logo'><img src = 'firo.png' alt = 'Logo'/></h1>
+          </div>
+            <h1 class="h1-responsive font-weight-bold wow fadeInLeft"  data-wow-delay="0.3s">Indonesia Expert Kids Factory</h1>
+            <hr class="hr-light wow fadeInLeft" data-wow-delay="0.5s">
+            <h6 class="mb-12 wow fadeInLeft" data-wow-delay="0.5s"></h6>
+          </div>
+          <!--Grid column-->
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Content -->
+    </div>
+    <!-- Mask & flexbox options-->
+  </div>
+  <!-- Full Page Intro -->
+</header>
+</section>
+
+<!--About us-->
+<section id="About us" class="bodyabout">
+  <div class="container">
+      <div class="col-md-12 text-center">
+         <header class="section-header">
+        <h3 style="text-align: center; color: white; padding-top: 5%;">About Us</h3>
+        <p style="color: white; padding-top: 3%;">IT company with various cool divisions.</p>
+        <p style="color: white;">The divisions that is:</p>
+         </header>
+      </div>
+    </div>
+  </div>
+  <script src="somethin.js"></script>
+ <div class="mt-0">
+  <div class="slideshow-container" style="padding-top: 5%;">
+
+    <div class="mySlides fade">
+      <img src="webdev.png" style="width:100%" class="foto">
+      <div class="text">Web Developer</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="network.png" style="width:100%" class="foto">
+      <div class="text">Network Developer</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="android.png" style="width:100%" class="foto">
+      <div class="text">Android Developer</div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="game.png" style="width:100%" class="foto">
+      <div class="text">Game Developer</div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="mekadev.jpg" style="width:100%" class="foto">
+      <div class="text">Mechatronic</div>
+    </div>
+
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    </div>
+     <script src=slideshow.js></script>
+     </section>
+  
+   
+<!--Contact us-->  
+<section id="contact" class="section-bg">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-header">
+      <h3 style="text-align: center;">Contact Us</h3>
+    </div>
+
+    <div class="row contact-info">
+
+      <div class="col-md-4">
+        <div class="contact-address">
+          <i class="ion-ios-location-outline"></i>
+          <h3>Address</h3>
+          <address>Jl Tropical, Semarang, Indonesia</address>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="contact-phone">
+          <i class="ion-ios-telephone-outline"></i>
+          <h3>Phone Number</h3>
+          <p><a href="tel:+155895548855">+62 243 920800</a></p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="contact-email">
+          <i class="ion-ios-email-outline"></i>
+          <h3>Email</h3>
+          <p><a href="mailto:firo@gmail.com">firo@gmail.com</a></p>
+        </div>
+      </div>
+
+    </div>
+
+    <!--Footer-->
+<section class="bodyabout">
+    <div class="jumbotron text-center" style="margin-bottom:0">
+      <p>Create by: Arghya Pramudita</p>
+      <p>Instagram: @agapramudita</p>
+    </div>
+  </section>
+ </body>
+</html>
